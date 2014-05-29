@@ -527,6 +527,9 @@ function! s:ApplyConfig(config) " {{{1
         elseif a:config["charset"] == "utf-16le"
             setl fileencoding=utf-16le
             setl bomb
+		elseif a:config["charset"] == "windows-1251"
+			setl fileencoding=windows-1251
+			setl bomb
         endif
     endif
 
